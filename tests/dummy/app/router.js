@@ -6,11 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route("posts");
-  this.route("simple");
-  this.route("sort");
-  this.route("sortdata");
-  this.route("handle");
+  this.resource("posts");
+  this.resource("simple");
+  this.resource("sort");
+  this.resource("sortdata");
+  this.resource("handle");
 });
 
 export default Router;
