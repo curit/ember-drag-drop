@@ -9,6 +9,7 @@ export default Ember.Component.extend({
   isDraggable: true,
   dragReady: true,
   isSortable: false,
+  sortingScope: 'drag-objects',
   title: Ember.computed.alias('content.title'),
 
   draggable: Ember.computed('isDraggable', function() {
